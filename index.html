@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Expenses chart component</title>
+</head>
+<body>
+  <main>
+    <section>
+      <div class="balance">
+        <div class="balance-text">
+          <h1 class="balance-text-h1">My balance</h1>
+          <p class="balance-text-p">$921.48</p>
+        </div>
+        <div class="balance-img">
+          <img src="./images/logo.svg" alt="">
+        </div>
+      </div>
+      <div class="spending">
+        <p class="spending-title">Spending - Last 7 days</p>
+        <canvas id="myChart" width="100%" height="50%"></canvas>
+        <div class="spending-total">
+          <div class="spending-total-month">
+            <p class="spending-total-month-text">Total this month</p>
+            <p class="spending-total-month-number">$478.33</p>
+          </div>
+          <div class="spending-total-last">
+            <p class="spending-total-last-percentage">+2.4%</p>
+            <p class="spending-total-last-text">from last month</p>
+          </div>
+        </div>
+      </div>
+    </section>   
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.linkedin.com/in/goldsanchez/">Santos Sánchez</a>.
+  </footer>
+  <script src="./node_modules/chart.js/dist/chart.js"></script>
+  <script type="module" src="./index.js"></script>
+</body>
+</html>
+</body>
+</html>

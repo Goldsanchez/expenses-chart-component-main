@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+:root {
+    --Soft-red: hsl(10, 79%, 65%);
+    --Cyan: hsl(186, 34%, 60%);
+    --Dark-brown: hsl(25, 47%, 15%);
+    --Medium-brown: hsl(28, 10%, 53%);
+    --Cream: hsl(27, 66%, 92%);
+    --Very-pale-orange: hsl(33, 100%, 98%);
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--Cream);
+    font-size: 15px;
+    height: 100vh;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    gap: 20px;
+
+}
+.balance{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--Soft-red);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.balance-text-h1{
+    color: var(--Very-pale-orange);
+    margin: 0px 0px 8px 0px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.balance-text-p{
+    color: var(--Very-pale-orange);
+    margin: 0px;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.spending{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: var(--Very-pale-orange);
+    border-radius: 12px;
+}
+canvas{
+    padding-bottom: 20px;
+}
+.spending-title{
+    color: var(--Dark-brown);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.spending-total{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 3px solid var(--Cream);
+    padding: 20px 0px 5px 0px;
+}
+.spending-total-month-text{
+    color: var(--Medium-brown);
+    margin: 0;
+}
+.spending-total-month-number{
+    color: var(--Dark-brown);
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin: 0;
+}
+.spending-total-last-percentage{
+    color: var(--Dark-brown);
+    font-weight: 700;
+    margin: 20px 0px 0px 0px;
+    text-align: right;
+}
+.spending-total-last-text{
+    color: var(--Medium-brown);
+    margin: 0;
+
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/*-----------------------------------(>1150px)---------------------------------*/
+@media only screen and (min-width: 1150px) {
+    section{
+        width: 480px;
+    }
+    .spending-total{
+        padding: 20px 10px 5px 14px;
+    }
+    .spending-total-month-number{
+        font-size: 2.7rem;
+
+    }
+    .spending-title{
+        font-size: 1.9rem;
+        padding-left: 10px;
+    }
+
+    .spending{
+        padding: 0px 20px 20px 20px;
+    }
+}
